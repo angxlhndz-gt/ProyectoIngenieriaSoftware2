@@ -32,6 +32,8 @@ public class LogicaDelNegocio {
             );
 
             return Math.multiplyExact(totalMinutos, 60L);
+            
+        //esta seccion de catch captura los errores
 
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException(
